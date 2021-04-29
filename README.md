@@ -1,4 +1,4 @@
-### live-code-basic-1
+### Basic-Live-Code-1
 
 ## Silahkan dikerjakan sesuai waktu yang sudah ditentukan
 ## Tidak boleh menggunakan "built-in" function
