@@ -18,8 +18,22 @@ Contoh:
 */
 
 function penghitungSiswaLulus(nilai){
-  //buat kodemu disini
+  let a = ('lulus');
+  let b = ('Tidak ada yang lulus');
+  let c = ('Data kosong');
+  let hasil = "";
+  let jumlah = [];
 
+  for ( let i= 0; i < nilai ; i++){
+    jumlah++ 
+  }
+  if (nilai > 75){
+  return a;
+  }else if ( nilai < 75){
+    return b;
+  }else{
+        return c;
+      }
 }
 
 //Test case

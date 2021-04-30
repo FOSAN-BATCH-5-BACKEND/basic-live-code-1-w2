@@ -11,6 +11,18 @@ Output : '9753'
  */
 
 function penampilAngka(stringAngka){
+    let ganjil = [];
+    let genap = [];
+    let a = 0 ;
+    for (let i=0; i <= stringAngka.length ; i++){
+        if (stringAngka % 2 == 0){
+        return genap.push(stringAngka[i]);
+        }else {
+            return ganjil.push(stringAngka[i]);
+
+        }    
+    }
+          
   
 }
 

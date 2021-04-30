@@ -13,7 +13,15 @@ Dilarang menggunakan built-in function
 */
 
 function jumlahHuruf(str) {
-    // isikan kode anda disini
+    var vocal = ['a','i','u','e','o'];
+    var a = 0;
+    for (let i = 0; i < str.length; i++){
+        for (let j=0 ; j < vocal.length; j++)
+        if (str[i] == vocal[j] ){
+            a++;
+        }
+    }
+    return a;
 }
 
 console.log(jumlahHuruf("indonesia")); //5

@@ -15,7 +15,15 @@ Dilarang menggunakan built-in function selain yang diperbolehkan.
 */
 
 function binaryGenerator(angka) {
-    // isikan kode anda disini
+    let a =angka.toString();
+    let b = 0;
+    // console.log(a);
+    for (let i= 0; i < a; i++ ){
+        if (angka < 5){
+            return b; 
+        }
+    }
+
 }
 
 console.log(binaryGenerator(45385593107843568));
