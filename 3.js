@@ -30,6 +30,9 @@ function penghitungSiswaLulus(nilai){
       if(nilai[i] == 0){
         return 'Tidak ada yang lulus'
       }
+      // if(nilai[i] == nilai[i]){
+      //   return 'Semua orang lulus'
+      // }
       // if(nilai[i] == [ ]){
       //   return 'Data kosong'
       // }
