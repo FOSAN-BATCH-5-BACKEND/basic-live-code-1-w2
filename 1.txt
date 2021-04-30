@@ -1,0 +1,73 @@
+/*
+INSTRUKSI
+=========
+
+Buatlah Algoritma/Pseudocode untuk kasus berikut !
+
+Seorang polisi sedang melakukan razia kepada pengendara sepeda motor di jalan raya. Untuk setiap pengendara akan di cek kelengkapan berupa : 
+- Menggunakan helm atau tidak
+- Membawa STNK atau tidak
+- Membawa SIM atau tidak
+- Apakah tanggal PLAT NOMOR masih berlaku atau tidak
+Untuk setiap aturan yang dilanggar maka pengendara harus membayar tilang sebesar 500 ribu rupiah.
+
+Tampilkan biaya denda pengendara sesuai dengan pelanggaran yang dilakukan
+
+Buatlah Algoritma dan Pseudocode mu dibawah ini
+
+
+*/
+MASALAH : MENGHITUNG DENDA BAGI PENGENDARA YANG MELANGGAR ATURAN
+VARIABEL :
+PENGENDARA
+HELM 
+STNK 
+SIM 
+PLAT NOMOR BERLAKU
+- ALGORITMA
+1. Cek kelengkapan pengendara 
+2. Cek Penggunaan Helm bagi pengendara => melanggar didenda 500.000 => tidak melanggar => lanjut pengecekan SIM
+3. Cek SIM => melanggar didenda 500.000 kala tidak melanggar => lanjut pengecekan STNK
+3. Cek STNK pengendara => melanggar didenda 500.000 => tidak melanggar => lanjut pengecekan Plat Nomor Kendaraan
+4. Cek Plat Nomor Kendaraan => melanggar didenda 500.000 
+5. Apabila Pengendara tidak melakukan pelanggaran maka Pengendara tidak didenda
+6. Apabila pengendara melakukan setiap pelanggaran akan didenda sebesar 500.000/pelanggaran
+
+- PSEUDOCODE
+1. variabel :   pengendara      = pengendara;
+                helm            = helm;
+                SIM             = sim
+                STNK            = stnk
+                PlatKendaraan   = Plat
+
+2. for (var i = 1; i <= pengendara ; i++){
+    if (pengendara = melanggar helm ){
+        cetak dendaHelm = 500.000;
+    }else{
+        lanjut cek sim;
+        continue;
+    }
+    if pengendara = melanggar sim ){
+        cetak dendaSim = 500.000;
+    }else{
+        lanjut cek stnk;
+        continue;
+    }
+    if (pengendara = melanggar stnk ){
+        cetak dendaStnk = 500.000;
+    }else{
+        lanjut cek plat;
+        continue;
+    }
+    if (pengendara = melanggar plat ){
+        cetak dendaPlat = 500.000;
+    }else{
+        lolos;
+        continue;
+    }
+    totalDenda = dendaHelm + dendaSim + dendaStnk + dendaPlat
+    console.log(totalDenda);
+}
+
+
+

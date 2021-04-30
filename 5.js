@@ -13,9 +13,19 @@ Output: '01011110001100111'
 Hanya diperbolehkan menggunakan 1 built-in function (toString)
 Dilarang menggunakan built-in function selain yang diperbolehkan.
 */
-
+let nilaiNol = "";
+let nilaiSatu ="";
 function binaryGenerator(angka) {
-    // isikan kode anda disini
+    let biner = angka.toString();
+    for (let i = 0; i <= angka ; i++){
+    if (angka === 1 || angka === 2 || angka === 3 || angka === 4 || angka === 5){
+    console.log('0');
+    }
+    if (angka === 6 || angka === 7 || angka === 8 || angka === 9 ){
+    console.log('1');
+    }
+}
+return nilaiNol, nilaiSatu;
 }
 
 console.log(binaryGenerator(45385593107843568));
