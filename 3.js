@@ -19,7 +19,17 @@ Contoh:
 
 function penghitungSiswaLulus(nilai){
   //buat kodemu disini
-
+  let jumlah = "";
+  jumlahData = nilai.length;
+  //jumlah data >= 75 maka tulis jumlahnya
+  //kalau tidak jangan ditulis
+  for (let i = 0; i <= nilai; i++){
+    if (nilai >= 75){
+      
+    }else if (nilai <= 75){
+      return 
+    }
+  }
 }
 
 //Test case

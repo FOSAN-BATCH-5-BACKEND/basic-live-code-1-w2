@@ -11,10 +11,18 @@ Output : '9753'
  */
 
 function penampilAngka(stringAngka){
+  // you can only write your code here!
+  let ganjil = [];
+  for(let i = 0; i <= stringAngka.length; i++) {
+  if(stringAngka[i] %2 != 0) {
+    ganjil.push(stringAngka[i]);
+    }
+  }
+  return ganjil;
   
 }
-
 //Test case
+
 console.log(penampilAngka('12345678')) // '1357'
 console.log(penampilAngka('1346789')) // '1379'
 console.log(penampilAngka('1298967')) // '1997'
