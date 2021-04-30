@@ -10,13 +10,18 @@ Input: '98765432'
 Output : '9753'
  */
 
-function penampilAngka(stringAngka){
-  
+function penampilAngka(stringAngka) {
+  let hasil = "";
+  for (let i = 1; i <= stringAngka.length; i++) {
+    if (i % 2 == 1) {
+      hasil += 1;
+    }
+  }
 }
 
 //Test case
-console.log(penampilAngka('12345678')) // '1357'
-console.log(penampilAngka('1346789')) // '1379'
-console.log(penampilAngka('1298967')) // '1997'
-console.log(penampilAngka('43447453')) // '3753'
-console.log(penampilAngka('46824')) // ''
+console.log(penampilAngka("12345678")); // '1357'
+console.log(penampilAngka("1346789")); // '1379'
+console.log(penampilAngka("1298967")); // '1997'
+console.log(penampilAngka("43447453")); // '3753'
+console.log(penampilAngka("46824")); // ''
