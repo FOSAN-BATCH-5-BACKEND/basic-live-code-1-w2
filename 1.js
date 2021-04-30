@@ -15,6 +15,25 @@ Tampilkan biaya denda pengendara sesuai dengan pelanggaran yang dilakukan
 
 Buatlah Algoritma dan Pseudocode mu dibawah ini
 
+add heml
+add STNK
+add SIM
+add plat nomet
+add jumlah tilang
+
+jika helm tidak ada
+pelanggaran
+
+jika STNK tidak ada 
+pelanggaran
+
+jika SIM tidak ada 
+pelanggaran
+
+jika plat nomer tidak berlaku
+pelanggaran
+
+jumlah tilang = 500 dikali jumlah pelanggaran
 
 
 */
