@@ -18,3 +18,19 @@ Buatlah Algoritma dan Pseudocode mu dibawah ini
 
 
 */
+program penilangan sepeda motor
+===============================
+deklarasi helm
+deklarasi SIM 
+deklarasi STNK 
+deklarasi polisi
+deklarasi pengendaraMotor
+===============================
+- IF pengendaraMotor menggunakan helm, tidak ditilang
+- ELSE pengendaraMotor tidak menggunakan helm, tilang 500rb
+- IF pengendaraMotor membawa STNK, tidak ditilang
+- ELSE pengendaraMotor tidak membawa STNK, tilang 500rb
+- IF pengendaraMotor membawa SIM, tidak ditilang
+- ELSE pengendaraMotor tidak membawa SIM, tilang 500rb
+=================================
+- WRITE jumlah biaya denda sesuai penilangan

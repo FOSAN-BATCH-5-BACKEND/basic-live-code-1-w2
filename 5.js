@@ -15,7 +15,18 @@ Dilarang menggunakan built-in function selain yang diperbolehkan.
 */
 
 function binaryGenerator(angka) {
-    // isikan kode anda disini
+    let string = angka.toString();
+    let penampungBinarry = '';
+    for(let i = 0; i < string.length; i++){
+        // console.log(string[i])
+        if(string[i] >= 5) /*|| string[i] == 6 || string[i] == 7 || string[i] == 8 || string[i] == 9)*/{
+            penampungBinarry += 1
+        }
+        if(string[i] <= 4) /*|| string[i] == 3 || string[i] == 2 || string[i] == 1 || string[i] == 0)*/{
+            penampungBinarry += 0;
+        }
+    }
+    return penampungBinarry
 }
 
 console.log(binaryGenerator(45385593107843568));
@@ -23,4 +34,4 @@ console.log(binaryGenerator(45385593107843568));
 console.log(binaryGenerator(509321967506747));
 //'101000111101101'
 console.log(binaryGenerator(366058562030849490134388085)); 
-//011011110000101010000011011
+// 011011110000101010000011011

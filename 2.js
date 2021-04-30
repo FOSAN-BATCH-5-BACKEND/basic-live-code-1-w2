@@ -11,7 +11,18 @@ Output : '9753'
  */
 
 function penampilAngka(stringAngka){
-  
+    if(stringAngka == ''){
+        return '';
+    }else{
+    let penampungString = '';
+    for(let i = 0; i < stringAngka.length; i++){
+        // console.log(stringAngka[i])
+        if(stringAngka[i] == 1 || stringAngka[i] == 3 || stringAngka[i] == 5 || stringAngka[i] == 7 || stringAngka[i] == 9){
+            penampungString += stringAngka[i]
+        }
+    }
+    return penampungString
+}
 }
 
 //Test case

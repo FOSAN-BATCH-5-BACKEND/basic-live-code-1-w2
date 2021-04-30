@@ -25,7 +25,25 @@ output: jumlah Gold: 1, jumlah Silver: 1, jumlah Bronze: 1. Dan totalnya adalah:
 
 
 function poinCalculator(string) {
-  
+    if(string == ''){
+        return 0;   
+    }
+    let penampungGold = 0;
+    let penampungSilver = 0; 
+    let penampungBronze = 0;
+    for(let i = 0; i < string.length; i++){
+        // console.log(string[i])
+        if(string[i] == 'G'){
+            penampungGold += 2
+        }
+        if(string[i] == 'S'){
+            penampungSilver += 1
+        }
+        if(string[i] == 'B'){
+            penampungBronze += 0.5
+        }
+    }
+    return penampungGold + penampungSilver + penampungBronze
 }
 
 console.log(poinCalculator("GSB"));
