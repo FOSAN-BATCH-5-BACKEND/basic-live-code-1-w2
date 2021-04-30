@@ -17,9 +17,16 @@ Contoh:
   Output: Data kosong
 */
 
-function penghitungSiswaLulus(nilai){
+function penghitungSiswaLulus(nilai) {
   //buat kodemu disini
-
+  let hasil = 0;
+  for (let i = 0; i < nilai.length; i++) {
+    // console.log(nilai[i]);
+    if (nilai[i] >= 75) {
+      hasil += 1;
+    }
+  }
+  return `${hasil} orang lulus`;
 }
 
 //Test case
