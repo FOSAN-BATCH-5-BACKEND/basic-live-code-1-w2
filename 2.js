@@ -12,8 +12,16 @@ Output : '9753'
 
 function penampilAngka(stringAngka){
   
-}
+    for (let i = 0; i <= stringAngka.length; i++) {
+        const nilai = stringAngka[i];
 
+    if (stringAngka[i] % 2== 1 ){
+        console.log(stringAngka[i]); 
+    }
+    else(stringAngka[i] % 2 == 0)
+     console.log(''); 
+    }
+}
 //Test case
 console.log(penampilAngka('12345678')) // '1357'
 console.log(penampilAngka('1346789')) // '1379'

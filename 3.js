@@ -19,7 +19,12 @@ Contoh:
 
 function penghitungSiswaLulus(nilai){
   //buat kodemu disini
-
+  if (nilai => 75 )
+     console.log('lulus');
+    else if (nilai < 75)
+      console.log('tidak lulus');
+    else (nilai = ' ')
+      console.log('data kosong');
 }
 
 //Test case
