@@ -16,6 +16,18 @@ Dilarang menggunakan built-in function selain yang diperbolehkan.
 
 function binaryGenerator(angka) {
     // isikan kode anda disini
+    let angkaString = angka.toString();
+    let output = "";
+    for (let index = 0; index < angkaString.length; index++) {
+        const element = angkaString[index];
+        // console.log(element);
+        if (element < 5) {
+            output += 0
+        } else {
+            output +=1
+        }
+    }
+    return output
 }
 
 console.log(binaryGenerator(45385593107843568));
