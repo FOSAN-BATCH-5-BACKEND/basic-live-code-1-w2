@@ -17,9 +17,25 @@ Contoh:
   Output: Data kosong
 */
 
-function penghitungSiswaLulus(nilai){
+function penghitungSiswaLulus(nilai) {
   //buat kodemu disini
-
+  if (nilai.length == []) {
+    return `Data kosong`;
+  } else {
+    hasil = 0;
+    for (i = 0; i <= nilai.length; i++) {
+      if (nilai[i] >= 75) {
+        hasil += 1;
+      }
+      if (hasil == nilai.length) {
+        return `semua orang lulus`;
+      }
+      if (nilai[i] == 0) {
+        return "tidak ada yang lulus";
+      }
+    }
+    return `${hasil} orang lulus`;
+  }
 }
 
 //Test case

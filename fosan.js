@@ -10,7 +10,6 @@ Gold (G) = 2
 Silver (S) = 1
 Bronze (B) = 0.5
 
-
 [RULE]
 - Hanya boleh menggunakan sintaks for/while, if-else, serta operasi string untuk pemecahan masalah.
 - Dilarang menggunakan regex .match dan lainnya!
@@ -22,10 +21,29 @@ poinCalculator("GSB")
 output: jumlah Gold: 1, jumlah Silver: 1, jumlah Bronze: 1. Dan totalnya adalah: 3.5
 */
 
-
-
 function poinCalculator(string) {
-  
+  let nilaiG = 0;
+  let nilaiS = 0;
+  let nilaiB = 0;
+
+  let jumlahG = 0;
+  let jumlahS = 0;
+  let jumlahB = 0;
+
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == "G") {
+      nilaiG += 1;
+      jumlahG += 2;
+    } else if (string[i] == "S") {
+      nilaiS += 1;
+      jumlahS += 1;
+    } else if (string[i] == "B") {
+      nilaiB += 1;
+      jumlahB += 0.5;
+    }
+  }
+  let jumlahTotal = jumlahG + jumlahS + jumlahB;
+  return `Jumlah Gold: ${nilaiG}, jumlah Silver: ${nilaiS}, jumlah Bronze: ${nilaiB}. Dan totalnya adalah: ${jumlahTotal}`;
 }
 
 console.log(poinCalculator("GSB"));

@@ -13,7 +13,33 @@ Dilarang menggunakan built-in function
 */
 
 function jumlahHuruf(str) {
-    // isikan kode anda disini
+  // isikan kode anda disini
+  // var vocal = ['a','i','u','e','o'];
+  // var a = 0;
+  // for (let i = 0; i < str.length; i++){
+  //     for (let j=0 ; j < vocal.length; j++)
+  //     if (str[i] == vocal[j] ){
+  //         a++;
+  //     }
+  // }
+  // return a;
+
+  let vokal = 0;
+  for (let i = 0; i <= str.length - 1; i++) {
+    //   console.log(str);
+    if (str[i] == "a") {
+      vokal += 1;
+    } else if (str[i] == "i") {
+      vokal += 1;
+    } else if (str[i] == "u") {
+      vokal += 1;
+    } else if (str[i] == "e") {
+      vokal += 1;
+    } else if (str[i] == "o") {
+      vokal += 1;
+    }
+  }
+  return vokal;
 }
 
 console.log(jumlahHuruf("indonesia")); //5
